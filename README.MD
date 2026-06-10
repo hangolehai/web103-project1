@@ -26,8 +26,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Implemented a modern "glassmorphism" UI aesthetic with custom CSS hover animations.
-- [x] Hosted custom, high-quality, AI-generated photorealistic images locally on the backend.
+- [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
