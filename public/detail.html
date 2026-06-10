@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Details - Amazing Houseplants</title>
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="container-fluid top-nav">
+        <ul>
+            <li><strong><a href="/" class="contrast">🌿 Amazing Houseplants</a></strong></li>
+        </ul>
+        <ul>
+            <li><a href="/">Back to List</a></li>
+        </ul>
+    </nav>
+
+    <main class="container" id="detail-container">
+        <div aria-busy="true" class="loading-state" id="loading-indicator">Loading plant details...</div>
+        
+        <article id="plant-article" class="hidden detail-card">
+            <header>
+                <h1 id="plant-name">Plant Name</h1>
+                <p><em id="plant-scientific">Scientific Name</em></p>
+            </header>
+            <div class="grid detail-grid">
+                <div>
+                    <img id="plant-image" src="" alt="Plant image" class="detail-image" />
+                </div>
+                <div class="detail-info">
+                    <h3>About this plant</h3>
+                    <p id="plant-description">Description goes here.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <span class="icon">🪴</span>
+                            <strong>Difficulty</strong>
+                            <p id="plant-difficulty">Easy</p>
+                        </div>
+                        <div class="stat-box">
+                            <span class="icon">☀️</span>
+                            <strong>Light</strong>
+                            <p id="plant-light">Bright indirect</p>
+                        </div>
+                        <div class="stat-box">
+                            <span class="icon">💧</span>
+                            <strong>Water</strong>
+                            <p id="plant-water">Weekly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <a href="/" role="button" class="outline">← Back to all plants</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="container-fluid">
+        <small>© 2026 Amazing Houseplants Inc.</small>
+    </footer>
+
+    <script src="/detail.js"></script>
+</body>
+</html>
